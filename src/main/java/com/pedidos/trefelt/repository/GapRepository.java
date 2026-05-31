@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GapRepository extends JpaRepository<Gap, Integer> {
+
+    public Gap findByName(String name);
+
 }
